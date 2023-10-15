@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import {Home as HomeIcon, Search, Library, ChevronLeft, ChevronRight} from 'lucide-react';
+import {Home as HomeIcon, Search, Library, ChevronLeft, ChevronRight, Play} from 'lucide-react';
 
 export default function Home() {
   return (
@@ -40,32 +40,51 @@ export default function Home() {
           
           <h1 className="font-semibold text-3xl mt-10">Good Afternoon</h1>
           <div className="grid grid-cols-3 gap-4 mt-4">
-            <div className="bg-white/10 rounded overflow-hidden flex items-center gap-4">
+            <a href="#" className="bg-white/10 group rounded overflow-hidden flex items-center gap-4 hover:bg-white/20 transition-colors">
               <Image src="/album_logo.png" alt="album cover" width={104} height={104}/>
               <strong>Wiped Out</strong>
-            </div>
-            <div className="bg-white/10 rounded overflow-hidden flex items-center gap-4">
+              {/* pay atention at the space in group-hover, the correct is always without space like group-hover:bg-red-400, to avoid CSS conflicts */}
+              <button className="invisible w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 group-hover:visible">
+                <Play fill='bg-black'/>
+              </button> 
+            </a>
+            <a href="#" className="bg-white/10 group rounded overflow-hidden flex items-center gap-4 hover:bg-white/20 transition-colors">
               <Image src="/album_logo.png" alt="album cover" width={104} height={104}/>
               <strong>Wiped Out</strong>
-            </div>
-            <div className="bg-white/10 rounded overflow-hidden flex items-center gap-4">
+              <button className="invisible w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 group-hover:visible">
+                <Play fill='bg-black'/>
+              </button>
+            </a>
+            <a href="#" className="bg-white/10 group rounded overflow-hidden flex items-center gap-4 hover:bg-white/20 transition-colors">
               <Image src="/album_logo.png" alt="album cover" width={104} height={104}/>
               <strong>Wiped Out</strong>
-            </div>
-            <div className="bg-white/10 rounded overflow-hidden flex items-center gap-4">
+              <button className="invisible w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 group-hover:visible">
+                <Play fill='bg-black'/>
+              </button>
+            </a>
+            <a href="#" className="bg-white/10 group rounded overflow-hidden flex items-center gap-4 hover:bg-white/20 transition-colors">
               <Image src="/album_logo.png" alt="album cover" width={104} height={104}/>
               <strong>Wiped Out</strong>
-            </div>
-            <div className="bg-white/10 rounded overflow-hidden flex items-center gap-4">
+              <button className="invisible w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 group-hover:visible">
+                <Play fill='bg-black'/>
+              </button>
+            </a>
+            <a href="#" className="bg-white/10 group rounded overflow-hidden flex items-center gap-4 hover:bg-white/20 transition-colors">
               <Image src="/album_logo.png" alt="album cover" width={104} height={104}/>
               <strong>Wiped Out</strong>
-            </div>
-            <div className="bg-white/10 rounded overflow-hidden flex items-center gap-4">
+              <button className="invisible w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 group-hover:visible">
+                <Play fill='bg-black'/>
+              </button>
+            </a>
+            <a href="#" className="bg-white/10 group rounded overflow-hidden flex items-center gap-4 hover:bg-white/20 transition-colors">
               <Image src="/album_logo.png" alt="album cover" width={104} height={104}/>
               <strong>Wiped Out</strong>
-            </div>
+              <button className="invisible w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 group-hover:visible">
+                <Play fill='bg-black'/>
+              </button>
+            </a>
           </div>
-          </main>
+        </main>
       </div>
       <footer className="bg-zinc-0 border-t border-zinc-700 p-6">footer</footer> {/* Multiply all numbers related to size by 4 */}
     </div>
